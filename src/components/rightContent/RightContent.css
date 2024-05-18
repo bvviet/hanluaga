@@ -1,0 +1,66 @@
+.content {
+    overflow-y: scroll; /* Sử dụng cuộn thường */
+    height: 100vh;
+    padding: 80px 30px 0 0;
+    /* Tạo thanh cuộn tùy chỉnh */
+    scrollbar-width: thin; /* Kích thước thanh cuộn */
+    scrollbar-color: transparent transparent; /* Màu thanh cuộn (màu cần thay đổi) */
+}
+
+/* Tạo màu cho thanh cuộn */
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Ẩn thanh cuộn khi không hover */
+.content::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* Hiện thanh cuộn khi hover */
+.content:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Màu của thanh cuộn */
+}
+
+img {
+    width: 540px;
+    height: 540px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        display: flex;
+        align-items: center;
+        overflow-y: visible;
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        margin-bottom: 45px;
+    }
+    .icon__list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 30px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
