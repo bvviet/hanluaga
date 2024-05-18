@@ -13,7 +13,7 @@ const LeftContent = () => {
                         giới cò đất. Bạn nào muốn bị lừa thì liên hệ mình.
                     </p>
                     <p className="highlight">
-                        Đăng kí và theo dõi kênh của mình để biết thêm nhiều thứ thú vị trên Đông va Tây Bắc nhé .!
+                        Đăng folow để biết thêm mẹo lùa gà bổ ích nhé .!
                     </p>
                     <p className="highlight">Donate cho mình :</p>
                     <p className="highlight">Nông Văn Hân</p>
